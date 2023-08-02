@@ -1,0 +1,121 @@
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__poke__image {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 11em;
+}
+
+.home__title {
+    color: red;
+    margin-top: 1.5em;
+}
+
+.home__text {
+    color: #302F2F;
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.home__form{
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home__btn {
+    background-color: red;
+    color: #ffff;
+    width: 150px;
+    max-width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home__input__trainer {
+    width: 150px;
+    max-width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home__input__trainer::placeholder {
+    color: #888;
+    opacity: 0.5;
+    padding-left: .5em;
+}
+
+.home__footer__red{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #DD1A1A;
+    width: 100%;
+    height: 6em;
+}
+
+.home__footer__black{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 2.5em;
+}
+
+.home__footer__circle-outer{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    bottom: -6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: white;
+    border: 8px solid #000000;
+}
+
+.home__footer__circle-inner{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: #212121;
+    border: 9px solid #000000;
+}
+
+/* BREAKPOINTS */
+
+@media screen and (min-width: 768px ){
+
+    .home__poke__image {
+        width: 600px;
+    }
+
+    .home__btn {
+        width: 200px;
+        font-weight: 300;
+        font-size: 17px;
+    }
+    
+    .home__input__trainer {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px ){
+
+    .home__poke__image {
+        width: 600px;
+        margin-top: 12em;
+    }
+}
