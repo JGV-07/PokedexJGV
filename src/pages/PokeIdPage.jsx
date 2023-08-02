@@ -19,7 +19,7 @@ const PokeIdPage = () => {
 
   const firstType = pokemon?.types[0].type.name;
   
-  const pokeBaseStat = 150;
+  const pokeBaseStat = 300;
 
   const navigate = useNavigate()
 
@@ -121,7 +121,7 @@ const PokeIdPage = () => {
                     {statInfo.stat.name}:
                   </p>
                   <p className="pokemon__stats__text-value">
-                    {statInfo.base_stat} / 150
+                    {statInfo.base_stat} / 300
                   </p>
                 </div>
                 <div className="pokemon__stat__container">

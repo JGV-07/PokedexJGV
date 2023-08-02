@@ -142,7 +142,7 @@
 
 .pokemon__stat__container {
     background: #F6F6F6;
-    max-width: 100%;
+    width: 100%;
     height: 30px;
     border: 2px solid #030706;
 }
@@ -150,6 +150,7 @@
 .pokemon__stat__value {
     background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
     height: 26px;
+    max-width: 500px;
 }
 
 .pokemon__moves__title{
@@ -199,6 +200,16 @@
     color: inherit;
 }
 
+.pokemon__input::-webkit-inner-spin-button,
+.pokemon__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pokemon__input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
 
 @media screen and (min-width: 768px ){
 
@@ -281,7 +292,6 @@
         font-size: 18px;
         font-weight: 500;
     }
-
     
 }
 
@@ -296,6 +306,12 @@
     .pokemon__image{
         left: 30%;
     }
+
+    .pokemon__form,
+    .pokemon__input{
+        max-width: 100px;
+    }
+
 }
 
 
