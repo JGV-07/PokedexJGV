@@ -4,12 +4,14 @@
     display: flex;
     justify-content: center;
     height: 2em;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .pokedex__input{
   width: 150px;
   max-width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem 0 0 2rem;
+  padding-left: 1em;
 }
 
 .pokedex__input::placeholder {
@@ -23,6 +25,8 @@
     color: #ffff;
     width: 80px;
     max-width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 2rem 2rem 0;
 }
 
 .pokedex__trainer__name{
@@ -98,10 +102,17 @@
   border-radius: 50%;
   background: #212121;
   border: 9px solid #000000;
+  position: absolute;
 }
 
-
-
+.bx-arrow-back {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(15%);
+}
   
 @media screen and (min-width: 768px ){
 

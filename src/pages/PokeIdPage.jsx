@@ -26,7 +26,13 @@ const PokeIdPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/pokedex/${inputSearch.current.value.trim()}`)
-  };
+  }
+
+  const handleClcik = (e) => {
+    e.preventDefault();
+    navigate('/pokedex/')
+  }
+
   const inputSearch = useRef();
 
 
@@ -44,7 +50,9 @@ const PokeIdPage = () => {
         </div>
         <div className="home__header__black"></div>
         <div className="home__header__circle-outer">
-          <div className="home__header__circle-inner"></div>
+          <div className="home__header__circle-inner">
+            <i onClick={handleClcik} className='bx bx-arrow-back bx-sm'></i>
+          </div>
         </div>
       </div>
 
