@@ -90,6 +90,7 @@ const PokeIdPage = () => {
         </ul>
 
         <ul className="pokemon__type__abilities">
+          
           <div className="pokemon__type-container">
             <h4 className="pokemon__type__title">Type</h4>
             <div className="pokemon__type">

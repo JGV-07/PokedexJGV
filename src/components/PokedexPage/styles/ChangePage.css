@@ -11,6 +11,28 @@
     background-color: transparent;
 }
 
+.pagination-btn.active {
+    background-color: #DD1A1A; /* Change the background color when highlighting the current page button */
+    color: #ffffff; /* Change the text color when highlighting the current page button */
+}
+
+.pagination-btn:hover{
+    background-color: rgba(142, 142, 142, 0.194);
+    color: #000000;
+}
+
+.last-page{
+    border-radius: 0 2rem 2rem 0;
+    background-color: #DD1A1A;
+    color: #ffffff;
+}
+
+.first-page{
+    border-radius: 2rem 0 0 2rem;
+    background-color: #DD1A1A;
+    color: #ffffff;
+}
+
 @media screen and (min-width: 768px ){
     .pagination-btn{
         padding: 1.5em;

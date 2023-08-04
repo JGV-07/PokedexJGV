@@ -24,15 +24,16 @@ const PokedexPage = () => {
   const [currentPage, setCurrentPage] = useState(1)
 
   const [pokePerPage] = useState(6)
+  
   //
 
   useEffect(() => {
     if (selectValue === "allPokemons") {
       getAllPokemons();
     } else {
-      getPokemonsByType(selectValue);
+      getPokemonsByType(selectValue)
     }
-  }, [selectValue]);
+  }, [selectValue])
 
   // PAGINATION TO CHANGE
 
@@ -50,11 +51,11 @@ const PokedexPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setinputValue(inputSearch.current.value.trim().toLowerCase());
-    setSelectValue("allPokemons");
+    setinputValue(inputSearch.current.value.trim().toLowerCase())
+    setSelectValue("allPokemons")
   };
 
-  const cbFilter = (poke) => poke.name.includes(inputValue) //La logica del input
+  const cbFilter = (poke) => poke.name.includes(inputValue) // Logic of the input
 
   return (
     <div className="pokedexPage__container">
@@ -107,13 +108,14 @@ const PokedexPage = () => {
           }
       </div>
 
-       <footer className="Pagination">
-       <ChangePage
-        pokePerPage={pokePerPage}
-        totalPoke={url.length}
-        paginate={paginate}
+      <footer className="Pagination">
+        <ChangePage
+          pokePerPage={pokePerPage}
+          totalPoke={pokemons?.results.length} // Cambio aquí
+          currentPage={currentPage} // Agrega este prop
+          paginate={paginate}
         />
-       </footer>
+      </footer>
 
     </div>
   );

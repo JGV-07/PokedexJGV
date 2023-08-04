@@ -7,12 +7,7 @@
     border: none;
     border-radius: 2rem;
     padding-left: .5em;
-}
-
-.select__option,
-.select__types {
-    padding: 1em;
-    font-weight: 300;
+    text-align: center;
 }
 
 /* BREAKPOINTS */
@@ -26,4 +21,5 @@
     .select__container{
         padding-left: 2em;
     }
+    
 }
